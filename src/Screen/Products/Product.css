@@ -1,0 +1,248 @@
+.productsPage {
+    width: 100%;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+    background-color: #EAEDED;
+}
+
+/* Top Banner */
+.productsTopBanner {
+    display: flex;
+    box-shadow: 0 0 1px #747474;
+    height: 50px;
+    padding: 0 9px 0 15px;
+    gap: 25px;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #fff;
+}
+
+.productTopBannerItems {
+    padding: 0 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.productTopBannerItemsSubMenu {
+    padding: 0 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.productTopBannerItemsSubMenu:hover {
+    text-decoration: underline;
+    text-decoration-color: #febd69;
+    text-decoration-thickness: 1px;
+}
+
+/* Main Layout */
+.productPageMain {
+    display: flex;
+    padding: 16px 8px;
+    background-color: #fff;
+}
+
+/* Left Category Sidebar */
+.productsPageMainLeftCategory {
+    width: 18%;
+    border-right: 1px solid #ddd;
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+.productsPageMainLeftCategoryTitle {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0f1111;
+}
+
+.productPageMainLeftCategoryContent {
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #0f1111;
+}
+
+.productsPageMainLeftCategoryConstentSub {
+    margin-top: 4px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #0f1111;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.productsPageMainLeftCategoryConstentSub:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+.filterSectionTitle {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0f1111;
+}
+
+.primeSection {
+    margin-top: 14px;
+}
+
+.reviewTitle {
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.ratingLeftBox {
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+    gap: 1px;
+    cursor: pointer;
+}
+
+.ratingLeftBox:hover .andUp {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+.andUp {
+    margin-left: 6px;
+    font-size: 13px;
+    color: #0f1111;
+}
+
+/* Right Section & Grid Layout */
+.productspageMainRight {
+    width: 82%;
+    padding: 0 0 0 12px;
+}
+
+.productsPageMainRightTopBannerspan {
+    color: #c45500;
+    font-weight: 700;
+}
+
+.productPageMainRightTopBanner {
+    width: 98%;
+    border: 1px solid #ccc;
+    margin: 10px 0 20px 0;
+    padding: 14px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+/* Product Cards Container Grid */
+.itemImageProductPage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.itemsImageProductPageOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.imgBlockitemsImageProductPageeOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    border-radius: 6px;
+    padding: 20px;
+    height: 220px;
+}
+
+.productImageproduct {
+    max-width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+}
+
+/* Product Content Details */
+.productDetailsSection {
+    margin-top: 12px;
+}
+
+.productCardTitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0f1111;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.productCardRating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.priceAndCartRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.productCardPrice {
+    display: flex;
+    align-items: flex-start;
+}
+
+.rupeeSymbol {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.priceValue {
+    font-size: 22px;
+    font-weight: 600;
+    color: #0f1111;
+}
+
+.addToCartBtn {
+    background-color: #ffd814;
+    border: 1px solid #fcd200;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213,217,217,.5);
+}
+
+.addToCartBtn:hover {
+    background-color: #f7ca00;
+}
+
+.productCardOffer {
+    font-size: 12px;
+    color: #0f1111;
+    margin-top: 8px;
+}
+
+.productCardDelivery {
+    font-size: 12px;
+    color: #565959;
+    margin-top: 4px;
+}

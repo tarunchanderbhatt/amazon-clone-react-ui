@@ -1,0 +1,105 @@
+.homeBanner {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fcebc5, #e8c682);
+    position: relative;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.grayBackgroundHomeBanner {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #fcebc5, #e8c682);
+    z-index: 1;
+}
+
+/* 4 Cards Grid Row Layout */
+.homeBannerItemDev {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 10px;
+     margin: 10% auto;
+}
+
+/* Individual Card Styling */
+.homeBannerItemDivCard {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.homeBannerItemDivCardTitle h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f1111;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+
+/* 2x2 Grid inside each card */
+.imgHomeBannerItemDeivCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 10px;
+}
+
+.imgBannerHomeDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgBannerHomeDivImg {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.imgBanerImgName {
+    font-size: 12px;
+    color: #0f1111;
+    line-height: 16px;
+}
+
+/* See More Link */
+.seeMoreLink {
+    margin-top: 20px;
+}
+
+.seeMoreLink a {
+    color: #007185;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.seeMoreLink a:hover {
+    text-decoration: underline;
+    color: #c7511f;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+    .homeBannerItemDev {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .homeBannerItemDev {
+        grid-template-columns: 1fr;
+    }
+}
